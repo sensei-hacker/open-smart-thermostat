@@ -41,3 +41,6 @@ Set the RP2040 GPIO drive strength to **12 mA** on the seven output pins (GP26, 
 - This connects to HVAC equipment.
 - Turn off power at the furnace or air handler before wiring.
 - Use at your own risk.
+
+## License
+MIT. See `LICENSE`.
