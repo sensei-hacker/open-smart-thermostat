@@ -1,0 +1,32 @@
+Designator,Quantity,Description,Package,Manufacturer,Manufacturer Part #,LCSC Part #,Notes
+C2,1,100nF 100V X7R leaded MLCC,Radial P=5.08mm (bend leads to 2.5mm),TORCH,CT4G-1206-2X1-100V-0.1uF-K,C454377,"No 100V part at 2.54mm pitch in stock at LCSC; this one has 5.08mm leads, so form them inward to fit the 2.5mm footprint. Alternative: KYOCERA AVX SR201C104KAR (2.54mm) from DigiKey/Mouser"
+C15,1,100nF 50V X7R leaded MLCC,Radial P=2.54mm,FH (Fenghua),CT4-0805B104K500F1,C168753,"+3V3 decoupling at U3, 50V is plenty"
+C3,1,100uF 63V electrolytic,Radial D8 P=3.5mm,Rubycon,63PX100MEFC8X11.5,C88774,
+"C5,C6,C7,C8,C9,C10,C11",7,10nF film,Radial P=7.5mm,KNSCHA,MPP103J2J07NN22600,C2927902,630VDC polypropylene; check body fits 10.3x4.5mm outline
+"C13,C14",2,10uF 50V electrolytic,Radial D5 P=2.0mm,Rubycon,50PX10MEFC5X11,C88833,"C13 is on VCLAMP (up to ~29 V), so needs >=35V; C14 10V"
+D1,1,1N4007,DO-41,onsemi,1N4007RLG,C53568,
+D7,1,P6KE47CA bidirectional TVS,DO-15,RUILON,P6KE47CA,C8929,"VRWM 40.2V, VBR 44.7V"
+D8,1,1N5817 Schottky,DO-41,LGE,1N5817,C7544876,
+D9,1,BZX79-C5V1 zener,DO-35,onsemi,BZX79C5V1,C895328,
+D10,1,BZX55C30 30V 0.5W zener (BZX79-C30 equivalent),DO-35,LGE,BZX55C30,C5190031,"Sets the clamp voltage. Same 28-32V / 500mW / DO-35 as BZX79-C30 (Nexperia BZX79-C30,133 is C550822 but low stock)"
+F1,1,PTC fuse 0.5A hold 60V,Radial P=5.1mm,Bourns,MF-R050,C208476,
+J1,1,Terminal block 2P 2.54mm,XY308-2.54-2P,XINLAIYA,XY308-2.54-2P,C557685,
+J8,1,Terminal block 3P 2.54mm,XY308-2.54-3P,XINLAIYA,XY308-2.54-3P,C557686,
+"J4,J5",2,Terminal block 4P 2.54mm,XY308-2.54-4P,XINLAIYA,XY308-2.54-4P,C915913,
+"J3,J6,J7,J9,JP1",1,Pin header 1x40 2.54mm male (cut to 4+7+7+2+2),2.54mm,ZHOURI,2.54-1*40,C2977586,One strip covers all 22 pins
+JP1 shunt,1,Jumper cap 2.54mm,2.54mm,XFCN,F254D-02-065-PT-B,C2689176,"Black, closed top; LCSC minimum order 50"
+"Q1,Q2,Q3,Q4,Q5,Q6,Q7",7,BT138-600E triac,TO-220,WeEn,"BT138-600E,127",C14796,
+Q8,1,TIP122 NPN Darlington 100V 5A,TO-220,STMicroelectronics,TIP122,C16283,"Clamp pass transistor, ~0.15 W typical; no heatsink"
+"R1,R2,R4",3,4.7k 1% 1/4W metal film,Axial D2.2xL6.5,UNI-ROYAL,MFR0W4F4701A50,C57204,
+"R5,R6,R8,R9,R11,R12,R14,R15,R17,R18,R20,R21,R23,R24",14,220R 1% 1/4W metal film,Axial D2.2xL6.5,UNI-ROYAL,MFR0W4F2200A50,C57439,MOC LED and triac gate resistors
+"R7,R10,R13,R16,R19,R22,R25,R26,R27",9,100R 1% 1/4W metal film,Axial D2.2xL6.5,UNI-ROYAL,MFR0W4F1000A50,C57438,
+R28,1,2.2k 1% 1/4W metal film,Axial D2.2xL6.5,UNI-ROYAL,MFR0W4F2201A50,C58595,
+U1,1,5V 0.5A buck module 6.5-36V in,SIP-3,MORNSUN,K7805-500R3,C86735,"LM78xx pinout (Vin/GND/Vout), fits the R-78HB footprint; fed from the Q8 clamp"
+U3,1,DS18B20 1-Wire temperature sensor,TO-92,Analog Devices/Maxim,DS18B20+,C9753,
+"U4,U5,U6,U7,U8,U9,U10",7,MOC3063 zero-cross triac driver,DIP-6,onsemi,MOC3063M,C8920,
+U4-U10 sockets,7,DIP-6 IC socket (optional),DIP-6 7.62mm,XFCN,IC254V-12-06-0743,C2874006,Optional; LCSC showed 0 stock when checked
+(buy elsewhere) XIAO,1,Seeed XIAO RP2040,Module,Seeed Studio,102010428,,"Buy elsewhere (Seeed, DigiKey, Mouser). Soldered onto J6/J7 male headers"
+(buy elsewhere) Dial,1,M5Stack Dial (ESP32-S3 UI),Module,M5Stack,K130,,"Buy elsewhere (M5Stack, DigiKey, Mouser)"
+(buy elsewhere) J9 cable,1,"USB-C plug pigtail, 2-wire power (5V/GND), ~15-30 cm",Cable,,,,Buy elsewhere (Amazon/AliExpress). Power-only USB-C male pigtail; confirm red=5V/black=GND with a meter before soldering to J9 (pin 1 = 5V). Cut to length
+(buy elsewhere) J8 probe,1,"DS18B20 waterproof probe, 3-wire",Cable probe,,,,"Optional remote/outdoor sensor. Buy elsewhere. Wires: red=3V3 (J8.1), yellow/white=DQ (J8.2), black=GND (J8.3) - verify for your probe"
+(buy elsewhere) J3 sensor,1,AHT20 or SHT31 temp/humidity I2C module (3.3V),Module,,,,"Optional humidity sensor on J3 (GND/3V3/SDA/SCL). Buy elsewhere (Adafruit, AliExpress). Mount on a short cable away from the regulators"

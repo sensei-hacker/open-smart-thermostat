@@ -1,0 +1,18 @@
+# local backups and KiCad local history
+thermostat-backups/
+.history/
+*.lck
+*.kicad_prl
+fp-info-cache
+# tool/session files
+.claude/
+# generated reports and sim output
+ERC.rpt
+sim/*.dat
+sim/nets.json
+sim/dbg*.cir
+# vendor document (M5Stack copyright)
+Dial.pdf
+# Seeed XIAO library copies, not used by this design
+symbols/
+fp-lib-table

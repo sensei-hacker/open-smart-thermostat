@@ -1,0 +1,106 @@
+* Simplified models for the thermostat schematic (KiCad: Sim.Library = this file).
+* All values are datasheet-typical guesses; adjust once real parts are chosen.
+
+* DF04M bridge rectifier (1 A, 400 V).  Pins: plus minus ac1 ac2
+.subckt DF04M plus minus ac1 ac2
+D1 ac1 plus DBR
+D2 ac2 plus DBR
+D3 minus ac1 DBR
+D4 minus ac2 DBR
+.model DBR D(Is=2.5n Rs=0.05 N=1.75 Cjo=15p M=0.33 Bv=400 Ibv=5u Tt=3u)
+.ends
+
+* 1N4007 rectifier diode (half-wave input).  Pins: a k
+.subckt D1N4007 a k
+D1 a k D1N4007M
+.model D1N4007M D(Is=76n Rs=42m N=1.45 Cjo=26p M=0.33 Vj=0.5 Bv=1000 Ibv=5u Tt=5u)
+.ends
+
+* P6KE43CA bidirectional TVS: two back-to-back diodes.  Pins: a b
+.subckt P6KE43CA a b
+D1 a mid DTV
+D2 b mid DTV
+.model DTV D(Is=1n Rs=0.4 N=1 Bv=45 Ibv=1m Cjo=500p)
+.ends
+
+* P6KE47CA bidirectional TVS (VBR 44.7-49.4 V, VRWM 40.2 V): two back-to-back diodes.  Pins: a b
+.subckt P6KE47CA a b
+D1 a mid DTV47
+D2 b mid DTV47
+.model DTV47 D(Is=1n Rs=0.4 N=1 Bv=49 Ibv=1m Cjo=450p)
+.ends
+
+* Recom R-78HB9.0-0.5 (behavioural): 9 V, 0.5 A, ~88% efficient, starts above ~11 V.
+* Pins: vin vss vout
+.subckt R78HB9 vin vss vout
+Bv  int vss V = 9*min(1, max(0,(V(vin,vss)-9.5)/3))
+Rs  int vsns 0.4
+Vo  vsns vout 0
+Bi  vin vss I = (V(vout,vss)*I(Vo))/(0.88*max(V(vin,vss),5))
+.ends
+
+* L7805 linear regulator (behavioural): 5 V, 2 V dropout, 5 mA quiescent.  Pins: vin vss vout
+.subckt L7805 vin vss vout
+Bv  int vss V = min(5, max(0, V(vin,vss)-2))
+Rs  int vout2 0.05
+Vo  vout2 vout 0
+Bi  vin vss I = 0.005 + I(Vo)
+.ends
+
+* MOC3063 zero-cross triac-driver optocoupler.  Pins: a k t4 t6
+* LED on at >= 5 mA; output turns on only if the terminal voltage is below ~15 V,
+* then stays on while the main current is above ~100 uA.
+.subckt MOC3063 a k t4 t6
+Dl  a lm DLED
+Vl  lm k 0
+Sout t4 om ctlf 0 SWO
+Vo  om t6 0
+Bctl ctl 0 V = ((I(Vl) > 5e-3 && abs(V(t4,t6)) < 15) || abs(I(Vo)) > 1e-4) ? 1 : 0
+Rf  ctl ctlf 100
+Cf  ctlf 0 1n
+.model DLED D(Is=1p N=2 Rs=10)
+.model SWO SW(Vt=0.5 Vh=0.1 Ron=25 Roff=1e8)
+.ends
+
+* BT138-600E triac (behavioural latch).  Pins: mt1 mt2 g
+* Fires when gate current exceeds ~20 mA, holds while main current exceeds ~30 mA.
+.subckt BT138 mt1 mt2 g
+Rg  g gi 20
+Vg  gi mt1 0
+Sm  mt2 mm ctlf 0 SWT
+Vm  mm mt1 0
+Bctl ctl 0 V = (abs(I(Vg)) > 0.02 || abs(I(Vm)) > 0.03) ? 1 : 0
+Rf  ctl ctlf 100
+Cf  ctlf 0 1n
+Roff mt2 mt1 100Meg
+.model SWT SW(Vt=0.5 Vh=0.1 Ron=0.15 Roff=1e8)
+.ends
+
+* Constant-power load: M5Stack Dial on USB 5 V (~1 W, from M5Stack docs: 0.84 W @ 6 V, 1.0 W @ 36 V).  Pins: p m
+.subckt DIAL_LOAD p m
+B1 p m I = (V(p,m) > 4.0) ? 1.0/V(p,m) : 0
+.ends
+
+* Mornsun K7805-500R3 (behavioural): 5 V, 0.5 A, 6.5-36 V in, ~85% efficient.  Pins: vin vss vout
+.subckt K7805 vin vss vout
+Bv  int vss V = min(5, max(0, V(vin,vss)-1.5))
+Rs  int vsns 0.2
+Vo  vsns vout 0
+Bi  vin vss I = 0.002 + (V(vout,vss)*I(Vo))/(0.85*max(V(vin,vss),5))
+.ends
+
+* TIP122 NPN Darlington (simple two-transistor model with the 8k / 120R B-E resistors).  Pins: b c e
+.subckt TIP122 b c e
+Q1 c b m QTIPD
+Q2 c m e QTIPO
+R1 b m 8k
+R2 m e 120
+.model QTIPD NPN(Is=1e-14 Bf=100 Vaf=100)
+.model QTIPO NPN(Is=1e-13 Bf=50 Vaf=100 Rb=1 Re=0.05)
+.ends
+
+* BZX79-C30 30 V zener.  Pins: k a
+.subckt BZX79C30 k a
+D1 a k DZ30
+.model DZ30 D(Is=1n Rs=20 N=1 Bv=30 Ibv=1m Cjo=30p)
+.ends

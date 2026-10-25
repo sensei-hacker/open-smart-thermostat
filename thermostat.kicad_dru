@@ -1,0 +1,8 @@
+(version 1)
+(rule "Minimum clearance 1"
+	(constraint clearance (min 0.2mm))
+)
+(rule "Pour to pads"
+	(condition "A.Type == 'Zone' && B.Type == 'Pad'")
+	(constraint clearance (min 0.5mm))
+)

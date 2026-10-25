@@ -1,0 +1,4 @@
+  - Get C2 rated 100 V or more.
+  - D7 is now P6KE47CA.
+  - Check on a real XY308 terminal block that the wires enter on the edge side.
+

@@ -1,0 +1,22 @@
+* single relay channel test: Rc bus -> triac -> output -> load -> C
+Vsrc src 0 SIN(0 34.08 60)
+Rtx src RC 1.5
+Rref C 0 1m
+Vg gp 0 PULSE(0 3.3 0.05 1u 1u 0.2 1)
+R5 gp la 220
+XU4 la 0 OUTN gnode MOC3063
+R6 gnode gtn 180
+XQ1 RC OUTN gtn BT138
+Rsn RC sn 100
+Csn sn OUTN 10n
+Rload OUTN C 60
+.include thermostat_models.lib
+.options method=gear reltol=1e-3
+.tran 20u 0.4 0 20u uic
+.control
+run
+set wr_singlescale
+wrdata relay_test.dat v(OUTN,C) v(RC,C) v(gnode,gtn) i(Vg)
+quit
+.endc
+.end

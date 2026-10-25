@@ -1,0 +1,27 @@
+Comment,Designator,Footprint,LCSC Part #
+100nF 100V ceramic,"C2,C15",C_Disc_D5.0mm_P2.50mm,
+100uF 63V electrolytic,C3,CP_Radial_D8.0mm_P3.50mm,
+10nF 250V film (MKS4),"C5,C6,C7,C8,C9,C10,C11",C_Rect_L10.3mm_W4.5mm_P7.50mm,
+10uF 50V electrolytic,C13,CP_Radial_D5.0mm_P2.00mm,
+10uF 10V electrolytic,C14,CP_Radial_D5.0mm_P2.00mm,
+1N4007,D1,DO-41,
+P6KE47CA,D7,DO-15,
+1N5817,D8,DO-41,
+BZX79-C5V1,D9,DO-35,
+BZX55C30,D10,DO-35,C5190031
+MF-R050 PTC 60V,F1,Fuse_Bourns_MF-RHT050,
+XY308-2.54-2P terminal block,J1,TerminalBlock_Xinya_XY308-2.54-2P,
+XY308-2.54-3P terminal block,J8,TerminalBlock_Xinya_XY308-2.54-3P,
+XY308-2.54-4P terminal block,"J4,J5",TerminalBlock_Xinya_XY308-2.54-4P,
+Pin header 1x02 2.54mm,"J9,JP1",PinHeader_1x02_P2.54mm_Vertical,
+Pin header 1x04 2.54mm,J3,PinHeader_1x04_P2.54mm_Vertical,
+Pin header 1x07 2.54mm,"J6,J7",PinHeader_1x07_P2.54mm_Vertical,
+BT138-600E,"Q1,Q2,Q3,Q4,Q5,Q6,Q7",TO-220-3_Vertical,
+TIP122,Q8,TO-220-3_Vertical,C16283
+4.7k 1/4W,"R1,R2,R4",R_Axial_DIN0207_P5.08mm_Vertical,
+220 1/4W,"R5,R6,R8,R9,R11,R12,R14,R15,R17,R18,R20,R21,R23,R24",R_Axial_DIN0207_P5.08mm_Vertical,
+100 1/4W,"R7,R10,R13,R16,R19,R22,R25,R26,R27",R_Axial_DIN0207_P5.08mm_Vertical,
+2.2k 1/4W,R28,R_Axial_DIN0207_P5.08mm_Vertical,
+K7805-500R3,U1,SIP-3 (RECOM R-78HB footprint),C86735
+DS18B20,U3,TO-92,
+MOC3063,"U4,U5,U6,U7,U8,U9,U10",DIP-6,

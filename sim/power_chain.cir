@@ -1,0 +1,63 @@
+* Thermostat power chain: 24VAC -> J1 -> F1 -> BR1 -> VRECT_DC -> U1 (9V SIP) -> +9V -> U12 (7805) -> +5V
+* Net names match the KiCad schematic.  Assumptions are marked (A).
+.param vac_rms=24.1        ; measured unloaded secondary
+.param rtx=1.5             ; (A) transformer + wiring series resistance, ohms
+.param rf1=1.0             ; (A) F1 PTC resistance, ohms (Bourns MF-RHT050 ~0.4..1.2)
+.param i5=0.08             ; (A) logic load on +5V: Xiao + LED drive
+.param pdial=0.52          ; (A) Dial input power through its own buck, W (88mA@5V / 0.85)
+
+* --- source / transformer / J1 ---
+Vsrc src 0 SIN(0 {vac_rms*1.41421} 60)
+Rtx src RC_24VAC_UNFUSED {rtx}
+Rret C_24VAC_RTN 0 0.001        ; C terminal reference
+* D7 TVS across RC_UNFUSED / C_RTN (bidirectional 43V class)
+* bidirectional TVS = two diodes back-to-back in series (anodes joined)
+D7a RC_24VAC_UNFUSED d7mid DTVS
+D7b C_24VAC_RTN d7mid DTVS
+* F1
+Rf1 RC_24VAC_UNFUSED RC_24VAC_FUSED {rf1}
+* --- BR1 (DF04M): AC pins = fused/RTN, + = VRECT_DC, - = GND ---
+Db1 RC_24VAC_FUSED VRECT_DC DBR
+Db2 C_24VAC_RTN    VRECT_DC DBR
+Db3 GNDL RC_24VAC_FUSED DBR
+Db4 GNDL C_24VAC_RTN    DBR
+* GND tied to Rret node only through the rectifier; give it a weak reference
+Rgnd GNDL 0 10Meg
+* --- C1, C2, C3 (with ESR) ---
+C1 VRECT_DC c1x 470u IC=0
+Rc1 c1x GNDL 0.12
+C2 VRECT_DC GNDL 0.1u
+C3 VRECT_DC c3x 100u IC=0
+Rc3 c3x GNDL 0.3
+* --- U1: R-78HB9.0-0.5 behavioural (9V, 0.5A limit, 88% eff, UVLO ~11V) ---
+Bu1v u1int GNDL V = 9*min(1, max(0,(V(VRECT_DC,GNDL)-9.5)/3))
+Ru1 u1int +9V 0.4
+* input current = Pout/(eff*Vin); Pout = V(+9V)*I(Rload)
+Bu1i VRECT_DC GNDL I = (V(+9V,GNDL)*(I(Vs9)+I(Vs5in)))/(0.88*max(V(VRECT_DC,GNDL),5))
+* sense sources (0V) to measure 9V-rail load current
+Vs9 +9V +9Vload 0
+* --- +9V rail: C13, J9 -> Dial (constant power, D13 drop ~0.4V) ---
+C13 +9V GNDL 10u IC=0
+Bdial +9Vload GNDL I = (V(+9V,GNDL)>6.5) ? {pdial}/max(V(+9Vload,GNDL),6.5) : 0
+* --- U12: L7805 behavioural (dropout 2V, ~5mA quiescent) ---
+Vs5in +9V u12in 0
+Bu12 u12int GNDL V = min(5, max(0,V(u12in,GNDL)-2))
+Ru12 u12int +5V 0.05
+Bq u12in GNDL I = 0.005 + I(Vs5) 
+Vs5 +5V +5Vload 0
+C14 +5V GNDL 10u IC=0
+Rl5 +5Vload GNDL {5/i5}
+* Sense sources as zero-volt supplies measure current
+
+.model DBR D(Is=2.5n Rs=0.05 N=1.75 Cjo=15p M=0.33 Bv=400 Ibv=5u Tt=3u)
+.model DTVS D(Is=1n Rs=0.4 N=1 Bv=45 Ibv=1m Cjo=500p)
+.options reltol=1e-3 abstol=1e-9 gmin=1e-10 method=gear
+.tran 20u 0.8 0 50u uic
+.control
+run
+set wr_vecnames
+set wr_singlescale
+wrdata power_chain.dat v(RC_24VAC_UNFUSED) v(RC_24VAC_FUSED) v(VRECT_DC,GNDL) v(+9V,GNDL) v(+5V,GNDL) v(GNDL) i(Vs9) i(Vs5)
+quit
+.endc
+.end
