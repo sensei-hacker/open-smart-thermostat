@@ -131,3 +131,17 @@ Next:
 - 2026-10-24: BOM-LCSC.csv filled (backup `.before-lcsc-fill`): R28 C58595, J4/J5 XY308-2.54-4P C915913, D10 BZX55C30 C5190031 (BZX79-C30 equivalent), C15 C168753 (50V 2.54mm), C2 C454377 (100V, 5.08mm leads to be formed to 2.5mm), jumper cap C2689176. Stock checked through JLCPCB's parts search on 2026-10-24.
 - Reviewed smeisner/smart-thermostat and lolokraus/Open-Source-Smart-Thermostat: no board changes needed; ideas are humidity sensor on J3/Dial Grove, firmware fallback/safety (see chat).
 - 2026-10-24: D10 value changed to BZX55C30 in the schematic (backup `.before-bzx55`); ERC 0 errors, netlist diff = value only. The PCB still says BZX79-C30 on F.Fab only (not in the Gerbers); run Update PCB to sync it, and no fab regeneration is needed. BOM.csv D10 = BZX55C30 C5190031. BOM-LCSC.csv gained "buy elsewhere" lines (XIAO, Dial, USB-C pigtail, DS18B20 probe, AHT20/SHT31). Wrote ASSEMBLY-AND-TEST.md (staged build, channel G first, jumper LED test before the XIAO, GPIO 12 mA code).
+
+### 2026-10-25: C2 5 mm, U3 power fix, JLC BOM, fab regenerated
+- C2 footprint is now C_Disc_D5.0mm_W2.5mm_P5.00mm (user), so the C454377 part (5.08 mm leads) fits without bending.
+- Schematic: U3 had snapped to (68.58, 171.45), leaving the +3V3 and GND symbols 0.58 mm off its wires, so U3/C15 had no power. Moved both symbols onto the wire ends (backup `thermostat.kicad_sch.before-u3-power-fix`). User ran Update PCB.
+- DRC with parity on the saved board: 0 unconnected, 0 parity issues. Remaining items are library-footprint-mismatch warnings plus the existing J7.2 starved-thermal warning (pad also has a track).
+- BOM-LCSC.csv reformatted for JLC (Comment/Designator/Footprint/... /Notes). Headers split into 2P/4P/7P parts. D8 changed to C698892 and D9 to C895329 (old codes had 0 stock). U1 C86735 is not in JLC's assembly library; the EVISUN C19188491 is the JLC alternative.
+- Fab regenerated: `fab/`, `thermostat-fab-2026-10-25.zip` (14 files), CPL.csv (only C2 moved). Old set in `thermostat-backups/fab-2026-10-24/`.
+
+### 2026-10-26: header holes 1.1 mm (next revision)
+- The ordered boards (JLC, fab zip 2026-10-25) have 1.0 mm header holes, about 0.1 mm of slack over the 0.905 mm diagonal of a 0.64 mm square pin. Test-fit a pin before soldering; don't force it.
+- The PCB now has 1.1 mm drills on J3, J6, J7, J9 and JP1 (22 pads, pads stay 1.7 mm). Backup `thermostat.kicad_pcb.before-hdr-1p1`. The fab zip and CPL were not regenerated, so they still match the ordered boards.
+- Rule of thumb: square pins need hole = diagonal + about 0.15-0.25 mm; round leads, lead diameter + the same.
+- The change is on the board's footprint copies only; "Update footprints from library" would put 1.0 mm back.
+- DRC with parity on a scratch copy: 0 unconnected, 0 parity issues, no new errors (3 more library-mismatch warnings from the changed drills).

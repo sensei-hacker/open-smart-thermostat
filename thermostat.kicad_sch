@@ -10,597 +10,6 @@
 		(rev "1.0")
 	)
 	(lib_symbols
-		(symbol "Transistor_BJT:TIP122"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TIP122"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-				(at 5.08 -1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" "5A Ic, 100V Vce, Silicon Darlington Power NPN Transistor, TO-220"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Darlington Power NPN Transistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO?220*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TIP122_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.889 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.762 0)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 2.032) (xy -0.254 0) (xy -0.254 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.27) (xy 0.762 2.286) (xy 2.54 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 0.762) (xy 0.762 -0.254) (xy 1.27 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.127) (xy 0.381 0.381) (xy 0.127 0.127) (xy 0.635 -0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.254) (xy 0.762 -2.032) (xy 1.143 -2.032) (xy 1.27 -1.778) (xy 1.397 -2.286) (xy 1.524 -1.778)
-						(xy 1.651 -2.286) (xy 1.778 -1.778) (xy 1.905 -2.286) (xy 2.032 -2.032) (xy 2.54 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.762 -0.254)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.032) (xy 0.381 -2.032) (xy 0.254 -2.286) (xy 0.127 -1.778) (xy 0 -2.286) (xy -0.127 -1.778)
-						(xy -0.254 -2.286) (xy -0.381 -1.778) (xy -0.508 -2.032) (xy -0.762 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.762 -2.032)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.762) (xy 1.27 -1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.381)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 2.286 1.016) (xy 2.54 1.016) (xy 2.54 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 3.175)
-					(stroke
-						(width 0.3556)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.508) (xy 2.286 -1.524) (xy 2.54 -1.524) (xy 2.54 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.159 -1.397) (xy 1.905 -0.889) (xy 1.651 -1.143) (xy 2.159 -1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 2.286)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.016)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.524) (xy 3.175 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.524)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.032) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -2.032)
-					(radius 0.127)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.127) (xy 3.556 0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.016) (xy 2.54 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.016) (xy 3.175 0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0.127) (xy 2.794 -0.635) (xy 3.556 -0.635) (xy 3.175 0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -0.635) (xy 3.175 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TIP122_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.667)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad"
-				(at 0 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
@@ -2287,6 +1696,597 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_BJT:TIP122"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TIP122"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "5A Ic, 100V Vce, Silicon Darlington Power NPN Transistor, TO-220"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Darlington Power NPN Transistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO?220*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TIP122_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.889 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.762 0)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 2.032) (xy -0.254 0) (xy -0.254 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.27) (xy 0.762 2.286) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 0.762) (xy 0.762 -0.254) (xy 1.27 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.127) (xy 0.381 0.381) (xy 0.127 0.127) (xy 0.635 -0.127)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -0.254) (xy 0.762 -2.032) (xy 1.143 -2.032) (xy 1.27 -1.778) (xy 1.397 -2.286) (xy 1.524 -1.778)
+						(xy 1.651 -2.286) (xy 1.778 -1.778) (xy 1.905 -2.286) (xy 2.032 -2.032) (xy 2.54 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -0.254)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -2.032) (xy 0.381 -2.032) (xy 0.254 -2.286) (xy 0.127 -1.778) (xy 0 -2.286) (xy -0.127 -1.778)
+						(xy -0.254 -2.286) (xy -0.381 -1.778) (xy -0.508 -2.032) (xy -0.762 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -2.032)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.762) (xy 1.27 -1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.286 1.016) (xy 2.54 1.016) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 3.175)
+					(stroke
+						(width 0.3556)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -0.508) (xy 2.286 -1.524) (xy 2.54 -1.524) (xy 2.54 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.159 -1.397) (xy 1.905 -0.889) (xy 1.651 -1.143) (xy 2.159 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 2.286)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.524) (xy 3.175 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -1.524)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.032) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 -2.032)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.127) (xy 3.556 0.127)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 1.016) (xy 2.54 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 1.016) (xy 3.175 0.127)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0.127) (xy 2.794 -0.635) (xy 3.556 -0.635) (xy 3.175 0.127)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -0.635) (xy 3.175 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TIP122_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.667)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5657,6 +5657,28 @@
 		)
 		(uuid "0d1b85b9-9c3e-436b-ac1c-2668bfa9fa9a")
 	)
+	(text "Mounting holes, M3. Pads left unconnected (no net)."
+		(exclude_from_sim no)
+		(at 340.36 238.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23242934-50bb-4c3c-8589-08b87784244b")
+	)
+	(text "J9: 5 V to Dial (USB-C pigtail)"
+		(exclude_from_sim no)
+		(at 352 30 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3134361e-d8f6-48cc-a8d2-f7958cf3068a")
+	)
 	(text "Temperature: DS18B20 (1-Wire) on D7 (GP1)"
 		(exclude_from_sim no)
 		(at 36 162 0)
@@ -5689,6 +5711,29 @@
 			(justify left bottom)
 		)
 		(uuid "bffd70ac-964d-4cb7-a6af-af6426061818")
+	)
+	(text "Q8/R28/D10 clamp: VCLAMP = min(VRECT - 1.5 V, ~29 V).\nKeeps U1 (36 V max) below its limit at light-load / high-line\npeaks (to ~41 V) and coil-switching spikes (D7 clamps ~65 V)."
+		(exclude_from_sim no)
+		(at 345 80 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db484c95-dba3-4681-8297-4bbda6511460")
+	)
+	(junction
+		(at 330.2 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "095f93d2-7220-4745-a55f-e1aa8019d478")
+	)
+	(junction
+		(at 335.28 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1221d4e4-8b39-4844-937d-b4aa864b0e26")
 	)
 	(junction
 		(at 254 213.11)
@@ -5763,6 +5808,18 @@
 		(uuid "af8d44f4-96de-42da-82ca-085ce6d04cf4")
 	)
 	(junction
+		(at 147 150)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "affa0d8f-7672-4434-8db9-0c9e0aef27ac")
+	)
+	(junction
+		(at 344.17 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2906a75-3b96-45c9-a91a-29df4bd2f26d")
+	)
+	(junction
 		(at 144 163.11)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -5780,9 +5837,25 @@
 		(color 0 0 0 0)
 		(uuid "e58e513b-3466-4fe0-b727-009874175215")
 	)
+	(no_connect
+		(at 355.6 254)
+		(uuid "12df7209-ec15-4318-881e-1c82b247ee53")
+	)
+	(no_connect
+		(at 381 254)
+		(uuid "15280602-f4c7-4fac-8d06-261d1dce0aa2")
+	)
+	(no_connect
+		(at 342.9 254)
+		(uuid "a75c364e-daf4-42a3-9ef7-5baee55afbd7")
+	)
+	(no_connect
+		(at 368.3 254)
+		(uuid "e12f1ab4-3c6e-495b-8de1-a9960eba9385")
+	)
 	(wire
 		(pts
-			(xy 92.71 177.8) (xy 90.17 177.8)
+			(xy 92.71 187.96) (xy 90.17 187.96)
 		)
 		(stroke
 			(width 0)
@@ -5872,7 +5945,7 @@
 	)
 	(wire
 		(pts
-			(xy 68 175.81) (xy 68 179)
+			(xy 68.58 175.26) (xy 68.58 179)
 		)
 		(stroke
 			(width 0)
@@ -5972,6 +6045,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 149.86) (xy 147 150)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "232cf934-1a42-4a1d-8c19-c8afb4a43f92")
+	)
+	(wire
+		(pts
 			(xy 150 225) (xy 150 224.09)
 		)
 		(stroke
@@ -6022,7 +6105,7 @@
 	)
 	(wire
 		(pts
-			(xy 74 179) (xy 68 179)
+			(xy 74 179) (xy 68.58 179)
 		)
 		(stroke
 			(width 0)
@@ -6049,16 +6132,6 @@
 			(type default)
 		)
 		(uuid "31701c41-171d-4128-a353-a9cfb193ada8")
-	)
-	(wire
-		(pts
-			(xy 49.53 171.45) (xy 49.53 172)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31966193-b172-4506-ac8c-153804929433")
 	)
 	(wire
 		(pts
@@ -6129,6 +6202,16 @@
 			(type default)
 		)
 		(uuid "3ba37e91-8ee0-4674-85b1-240ed9f6f75d")
+	)
+	(wire
+		(pts
+			(xy 147 150) (xy 150 150)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bf3e13f-52fe-4ca3-9bbf-a4004972c5b5")
 	)
 	(wire
 		(pts
@@ -6332,6 +6415,16 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 50.8) (xy 347.98 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "608eeeaf-859c-4164-99dc-a68a759dbd85")
+	)
+	(wire
+		(pts
 			(xy 220.81 150) (xy 222.38 150)
 		)
 		(stroke
@@ -6352,7 +6445,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 171.45) (xy 49.53 171.45)
+			(xy 46.99 171.45) (xy 63.5 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6369,6 +6462,26 @@
 			(type default)
 		)
 		(uuid "67ae8a53-47f8-417f-99c5-09a642bf147a")
+	)
+	(wire
+		(pts
+			(xy 90.17 180.34) (xy 90.17 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68f98fd1-74f2-4dc7-ba7a-d41b08336d92")
+	)
+	(wire
+		(pts
+			(xy 327.52 50.8) (xy 330.2 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a6f8844-b2a5-4457-be88-a35d2d115efa")
 	)
 	(wire
 		(pts
@@ -6389,6 +6502,16 @@
 			(type default)
 		)
 		(uuid "6bdb0890-f6f4-4dae-90e6-eb1e9f9c22e4")
+	)
+	(wire
+		(pts
+			(xy 355.6 55.88) (xy 355.6 58.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bdcb91a-ac21-466c-97b9-c228f6d39069")
 	)
 	(wire
 		(pts
@@ -6552,6 +6675,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 180.34) (xy 187.96 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80390e8b-60ff-4911-9916-e69550d7654e")
+	)
+	(wire
+		(pts
 			(xy 260.52 97.8) (xy 260.52 103.8)
 		)
 		(stroke
@@ -6672,6 +6805,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 58.42) (xy 335.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90e0806d-eb2e-4792-9357-497eac553ca7")
+	)
+	(wire
+		(pts
 			(xy 239 175) (xy 239 180.08)
 		)
 		(stroke
@@ -6682,7 +6825,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 172.72) (xy 92.71 177.8)
+			(xy 92.71 172.72) (xy 92.71 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6692,7 +6835,7 @@
 	)
 	(wire
 		(pts
-			(xy 144 150) (xy 150 150)
+			(xy 144 150) (xy 147 150)
 		)
 		(stroke
 			(width 0)
@@ -6862,6 +7005,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 186.69) (xy 190.5 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af626e9a-5cec-40fa-b40c-02b4ba04102b")
+	)
+	(wire
+		(pts
 			(xy 247.81 205.08) (xy 248.92 205.08)
 		)
 		(stroke
@@ -6929,6 +7082,16 @@
 			(type default)
 		)
 		(uuid "bfbde2cc-7a5c-40c6-873a-ccde8c6bff2e")
+	)
+	(wire
+		(pts
+			(xy 363.22 50.8) (xy 393.72 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2423a7d-229f-432f-86d9-47bd2d325c29")
 	)
 	(wire
 		(pts
@@ -7012,7 +7175,7 @@
 	)
 	(wire
 		(pts
-			(xy 74 164) (xy 68 164)
+			(xy 74 164) (xy 68.58 164)
 		)
 		(stroke
 			(width 0)
@@ -7099,6 +7262,16 @@
 			(type default)
 		)
 		(uuid "d158a962-097b-4be4-a43d-aa8977847933")
+	)
+	(wire
+		(pts
+			(xy 344.17 50.8) (xy 344.17 54.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d179be53-b04e-47f1-bb43-ea38fe6da9b8")
 	)
 	(wire
 		(pts
@@ -7252,7 +7425,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 186.69) (xy 190.5 186.69)
+			(xy 186.69 180.34) (xy 187.96 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7262,7 +7435,7 @@
 	)
 	(wire
 		(pts
-			(xy 68 168.19) (xy 68 164)
+			(xy 68.58 167.64) (xy 68.58 164)
 		)
 		(stroke
 			(width 0)
@@ -7289,6 +7462,16 @@
 			(type default)
 		)
 		(uuid "ebec647e-8482-4ef3-abe5-4d64f36700ec")
+	)
+	(wire
+		(pts
+			(xy 179.07 180.34) (xy 179.07 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec63c45a-8cdf-4897-926d-3c76e01ed069")
 	)
 	(wire
 		(pts
@@ -7339,16 +7522,6 @@
 			(type default)
 		)
 		(uuid "f1715452-73ab-447d-853e-e995168c1b36")
-	)
-	(wire
-		(pts
-			(xy 49.53 172) (xy 62.92 172)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f90e2f56-de63-4283-bf73-231a6cd1efeb")
 	)
 	(wire
 		(pts
@@ -7591,7 +7764,7 @@
 		(uuid "451ffc68-0bb7-4edd-9841-8a5151f337d2")
 	)
 	(label "RC_24VAC_UNFUSED"
-		(at 147 150 0)
+		(at 147.32 149.86 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -7800,6 +7973,16 @@
 		)
 		(uuid "89dcd975-0409-4bd7-b109-e69a08938996")
 	)
+	(label "VCLAMP"
+		(at 340.6 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9cd14b18-061d-4677-9e0d-c36133195cde")
+	)
 	(label "TP_SDA"
 		(at 60 119.92 180)
 		(effects
@@ -7961,7 +8144,7 @@
 		(uuid "e86d74cb-42ce-4b15-8351-1b2965fd9fec")
 	)
 	(label "1WIRE"
-		(at 54 172 0)
+		(at 54 171.45 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -8122,7 +8305,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 90.17 177.8 180)
+		(at 90.17 187.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8132,7 +8315,7 @@
 		)
 		(uuid "b3b8ceb9-3341-4e61-afbf-670600df52f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 177.8 0)
+			(at 90.17 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8721,7 +8904,7 @@
 	)
 	(symbol
 		(lib_id "thermostat:GND")
-		(at 68 179 0)
+		(at 68.58 179 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8751,7 +8934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68 179 0)
+			(at 68.58 179 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8762,7 +8945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68 179 0)
+			(at 68.58 179 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8773,7 +8956,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68 179 0)
+			(at 68.58 179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9667,7 +9850,7 @@
 	)
 	(symbol
 		(lib_id "thermostat:+3V3")
-		(at 68 164 0)
+		(at 68.58 164 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9687,7 +9870,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 72.644 164.338 0)
+			(at 73.224 164.338 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9697,7 +9880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68 164 0)
+			(at 68.58 164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9708,7 +9891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68 164 0)
+			(at 68.58 164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9719,7 +9902,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68 164 0)
+			(at 68.58 164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10537,7 +10720,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 317.52 65.8 0)
 			(hide yes)
 			(show_name no)
@@ -12029,7 +12212,7 @@
 	)
 	(symbol
 		(lib_id "thermostat:D_V")
-		(at 90.17 173.99 180)
+		(at 90.17 184.15 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -12039,7 +12222,7 @@
 		(dnp no)
 		(uuid "46f2d1f6-88ae-4d39-84de-9d7fc7db878b")
 		(property "Reference" "D9"
-			(at 96 172.7 0)
+			(at 90.932 184.658 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12049,7 +12232,7 @@
 			)
 		)
 		(property "Value" "BZX79-C5V1"
-			(at 96 175.2 0)
+			(at 96 185.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12059,7 +12242,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 90.17 173.99 0)
+			(at 90.17 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12070,7 +12253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 173.99 0)
+			(at 90.17 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12081,7 +12264,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 173.99 0)
+			(at 90.17 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12100,6 +12283,205 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 381 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4c1e9ef9-7122-4473-8b98-2c4fc61ca445")
+		(property "Reference" "H4"
+			(at 381 245.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 381 247.015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 381 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 381 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e62654e5-0704-49bf-931b-51426807fa2f")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "thermostat:D_V")
+		(at 335.28 62.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d377bc3-6f62-49d7-a343-9f1a7a64f4e3")
+		(property "Reference" "D10"
+			(at 337.5 61.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BZX55C30"
+			(at 337.5 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30 V zener, sets VCLAMP"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "${KIPRJMOD}/sim/thermostat_models.lib"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BZX79C30"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=k 2=a"
+			(at 335.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ecda59c-d7d3-448a-aaa6-ddffe019a2c0")
+		)
+		(pin "2"
+			(uuid "0b63e9d5-5d58-4757-a0d8-e8dc106ead51")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -12336,6 +12718,84 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "thermostat:+5V")
+		(at 156.19 66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "54bdf66e-cc76-4829-b7ae-9ba06703262f")
+		(property "Reference" "#PWR208"
+			(at 158.19 64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 158.19 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.19 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.19 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.19 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e25cfc28-fac6-4cd2-b217-ef08d3fd9886")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "#PWR208")
 					(unit 1)
 				)
 			)
@@ -12657,6 +13117,118 @@
 		)
 	)
 	(symbol
+		(lib_id "thermostat:R")
+		(at 330.2 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b48f21a-89af-47e7-83ca-49f17a582ba6")
+		(property "Reference" "R28"
+			(at 325.5 54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 325.5 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "r=2.2k"
+			(at 330.2 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83700a1e-5764-422c-9f58-1ed46c8609ed")
+		)
+		(pin "2"
+			(uuid "8df6123a-1fc0-4c99-aed4-41e9e9dc059e")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "thermostat:MOC3063")
 		(at 120 202.54 0)
 		(mirror x)
@@ -12903,6 +13475,84 @@
 		)
 	)
 	(symbol
+		(lib_id "thermostat:+5V")
+		(at 379.22 40.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "66bd874a-c79b-4bb5-bc77-971b9d0772ba")
+		(property "Reference" "#PWR207"
+			(at 381.22 38.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 381.22 42.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 379.22 40.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 379.22 40.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 379.22 40.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7ff6835-e370-4def-8286-88a1a71bcb1e")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "#PWR207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "thermostat:R")
 		(at 260 202.9 0)
 		(unit 1)
@@ -13015,7 +13665,7 @@
 	)
 	(symbol
 		(lib_id "thermostat:DS18B20")
-		(at 68 172 0)
+		(at 68.58 171.45 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -13026,7 +13676,7 @@
 		(dnp no)
 		(uuid "6b263b66-4763-4335-9d7a-bf2a6cf29341")
 		(property "Reference" "U3"
-			(at 68 164.38 0)
+			(at 68.58 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13037,7 +13687,7 @@
 			)
 		)
 		(property "Value" "DS18B20"
-			(at 68.834 173.736 0)
+			(at 69.414 173.186 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13047,7 +13697,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 68 172 0)
+			(at 68.58 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13058,7 +13708,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68 172 0)
+			(at 68.58 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13069,7 +13719,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 68 172 0)
+			(at 68.58 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13091,6 +13741,82 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 355.6 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "6d479f0e-d3d9-4c5e-a264-ae42992a40ec")
+		(property "Reference" "H2"
+			(at 355.6 245.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 355.6 247.015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 355.6 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 355.6 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8616a0a4-7d9a-4fd1-8dd4-6e06957d4b1f")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -13396,7 +14122,7 @@
 	)
 	(symbol
 		(lib_id "thermostat:D_V")
-		(at 182.88 186.69 90)
+		(at 182.88 180.34 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -13406,7 +14132,7 @@
 		(dnp no)
 		(uuid "73c8fe96-df42-4586-84a0-f492d84c8f2f")
 		(property "Reference" "D8"
-			(at 182.88 183.5 0)
+			(at 182.88 177.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13416,7 +14142,7 @@
 			)
 		)
 		(property "Value" "1N5817"
-			(at 182.88 190.5 0)
+			(at 182.88 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13426,7 +14152,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal"
-			(at 182.88 186.69 0)
+			(at 182.88 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13437,7 +14163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 186.69 0)
+			(at 182.88 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13448,7 +14174,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 182.88 186.69 0)
+			(at 182.88 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13766,6 +14492,82 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 342.9 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "7bb9ed27-611e-491c-9f4b-463bc78e8765")
+		(property "Reference" "H1"
+			(at 342.9 245.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 342.9 247.015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 342.9 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 342.9 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d38122c0-3cbc-446c-96a2-1ba94ec7fdac")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -16667,6 +17469,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 368.3 251.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "bf62cd19-a5c2-40c8-aa3e-0c1beed183f1")
+		(property "Reference" "H3"
+			(at 368.3 245.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M3"
+			(at 368.3 247.015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
+			(at 368.3 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 368.3 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 368.3 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28207f41-6728-48a1-b208-60462b27c337")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "thermostat:GND")
 		(at 222.38 159 0)
 		(unit 1)
@@ -16924,6 +17802,84 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "thermostat:GND")
+		(at 335.28 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "d5266772-a9fb-42bd-988c-9b740a744d41")
+		(property "Reference" "#PWR206"
+			(at 337.28 64.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 337.28 68.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 335.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 335.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 335.28 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d91c292-a7e7-476a-a7d2-89c2a142197b")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "#PWR206")
 					(unit 1)
 				)
 			)
@@ -17235,6 +18191,84 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "V1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "thermostat:PWR_FLAG")
+		(at 344.17 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "dbb69249-d890-4d0e-a5f1-6e191f7ab4b1")
+		(property "Reference" "#FLG05"
+			(at 346.17 48.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 346.17 52.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 344.17 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 344.17 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22fd664b-1381-4c88-93ae-c363bd88ce09")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -17668,6 +18702,132 @@
 			(project "thermostat"
 				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
 					(reference "R_TX1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:TIP122")
+		(at 335.28 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4a3b224-2947-406f-9803-7416aa7eb680")
+		(property "Reference" "Q8"
+			(at 331 44.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TIP122"
+			(at 331 46.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VCLAMP pre-regulator: caps U1/J9 feed at ~29 V"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "${KIPRJMOD}/sim/thermostat_models.lib"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "TIP122"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=b 2=c 3=e"
+			(at 335.28 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "748d5ea3-8a80-4d55-aed8-dd7caea5f314")
+		)
+		(pin "2"
+			(uuid "ea8dd071-4cf8-45fc-b738-8c65a6e55376")
+		)
+		(pin "3"
+			(uuid "8a10865b-885e-4a01-91a7-24b18f10cd0f")
+		)
+		(instances
+			(project "thermostat"
+				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -18455,1120 +19615,6 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 342.9 251.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "7bb9ed27-611e-491c-9f4b-463bc78e8765")
-		(property "Reference" "H1"
-			(at 342.9 245.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M3"
-			(at 342.9 247.01500000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 342.9 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 342.9 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 342.9 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d38122c0-3cbc-446c-96a2-1ba94ec7fdac")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 342.9 254.0)
-		(uuid "a75c364e-daf4-42a3-9ef7-5baee55afbd7")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 355.6 251.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "6d479f0e-d3d9-4c5e-a264-ae42992a40ec")
-		(property "Reference" "H2"
-			(at 355.6 245.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M3"
-			(at 355.6 247.01500000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 355.6 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 355.6 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 355.6 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8616a0a4-7d9a-4fd1-8dd4-6e06957d4b1f")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 355.6 254.0)
-		(uuid "12df7209-ec15-4318-881e-1c82b247ee53")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 368.3 251.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "bf62cd19-a5c2-40c8-aa3e-0c1beed183f1")
-		(property "Reference" "H3"
-			(at 368.3 245.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M3"
-			(at 368.3 247.01500000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 368.3 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 368.3 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "28207f41-6728-48a1-b208-60462b27c337")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 368.3 254.0)
-		(uuid "e12f1ab4-3c6e-495b-8de1-a9960eba9385")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 381.0 251.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "4c1e9ef9-7122-4473-8b98-2c4fc61ca445")
-		(property "Reference" "H4"
-			(at 381.0 245.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M3"
-			(at 381.0 247.01500000000001 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 381.0 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381.0 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 381.0 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e62654e5-0704-49bf-931b-51426807fa2f")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(no_connect
-		(at 381.0 254.0)
-		(uuid "15280602-f4c7-4fac-8d06-261d1dce0aa2")
-	)
-	(text "Mounting holes, M3. Pads left unconnected (no net)."
-		(exclude_from_sim no)
-		(at 340.36 238.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "23242934-50bb-4c3c-8589-08b87784244b")
-	)
-	(symbol
-		(lib_id "Transistor_BJT:TIP122")
-		(at 335.28 53.34 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e4a3b224-2947-406f-9803-7416aa7eb680")
-		(property "Reference" "Q8"
-			(at 331 44.5 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TIP122"
-			(at 331 46.3 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "VCLAMP pre-regulator: caps U1/J9 feed at ~29 V"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "${KIPRJMOD}/sim/thermostat_models.lib"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "TIP122"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=b 2=c 3=e"
-			(at 335.28 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "748d5ea3-8a80-4d55-aed8-dd7caea5f314")
-		)
-		(pin "2"
-			(uuid "ea8dd071-4cf8-45fc-b738-8c65a6e55376")
-		)
-		(pin "3"
-			(uuid "8a10865b-885e-4a01-91a7-24b18f10cd0f")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:R")
-		(at 330.2 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5b48f21a-89af-47e7-83ca-49f17a582ba6")
-		(property "Reference" "R28"
-			(at 325.5 54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2k"
-			(at 325.5 56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical"
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "r=2.2k"
-			(at 330.2 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "83700a1e-5764-422c-9f58-1ed46c8609ed")
-		)
-		(pin "2"
-			(uuid "8df6123a-1fc0-4c99-aed4-41e9e9dc059e")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "R28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:D_V")
-		(at 335.28 62.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4d377bc3-6f62-49d7-a343-9f1a7a64f4e3")
-		(property "Reference" "D10"
-			(at 337.5 61.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BZX55C30"
-			(at 337.5 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "30 V zener, sets VCLAMP"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "${KIPRJMOD}/sim/thermostat_models.lib"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BZX79C30"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=k 2=a"
-			(at 335.28 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ecda59c-d7d3-448a-aaa6-ddffe019a2c0")
-		)
-		(pin "2"
-			(uuid "0b63e9d5-5d58-4757-a0d8-e8dc106ead51")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:GND")
-		(at 335.28 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "d5266772-a9fb-42bd-988c-9b740a744d41")
-		(property "Reference" "#PWR206"
-			(at 337.28 64.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 337.28 68.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 335.28 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 335.28 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 335.28 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d91c292-a7e7-476a-a7d2-89c2a142197b")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "#PWR206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:PWR_FLAG")
-		(at 344.17 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "dbb69249-d890-4d0e-a5f1-6e191f7ab4b1")
-		(property "Reference" "#FLG05"
-			(at 346.17 48.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 346.17 52.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 344.17 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 344.17 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 344.17 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22fd664b-1381-4c88-93ae-c363bd88ce09")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:+5V")
-		(at 379.22 40.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "66bd874a-c79b-4bb5-bc77-971b9d0772ba")
-		(property "Reference" "#PWR207"
-			(at 381.22 38.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 381.22 42.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 379.22 40.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 379.22 40.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 379.22 40.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a7ff6835-e370-4def-8286-88a1a71bcb1e")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "#PWR207")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "thermostat:+5V")
-		(at 156.19 66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "54bdf66e-cc76-4829-b7ae-9ba06703262f")
-		(property "Reference" "#PWR208"
-			(at 158.19 64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 158.19 68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.19 66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.19 66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 156.19 66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e25cfc28-fac6-4cd2-b217-ef08d3fd9886")
-		)
-		(instances
-			(project "thermostat"
-				(path "/bedb5f91-6ecb-4b66-bdba-714a7e52d29b"
-					(reference "#PWR208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 327.52 50.8) (xy 330.2 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a6f8844-b2a5-4457-be88-a35d2d115efa")
-	)
-	(wire
-		(pts
-			(xy 330.2 58.42) (xy 335.28 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90e0806d-eb2e-4792-9357-497eac553ca7")
-	)
-	(wire
-		(pts
-			(xy 340.36 50.8) (xy 347.98 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "608eeeaf-859c-4164-99dc-a68a759dbd85")
-	)
-	(wire
-		(pts
-			(xy 344.17 50.8) (xy 344.17 54.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d179be53-b04e-47f1-bb43-ea38fe6da9b8")
-	)
-	(wire
-		(pts
-			(xy 355.6 55.88) (xy 355.6 58.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bdcb91a-ac21-466c-97b9-c228f6d39069")
-	)
-	(wire
-		(pts
-			(xy 363.22 50.8) (xy 393.72 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2423a7d-229f-432f-86d9-47bd2d325c29")
-	)
-	(junction
-		(at 330.2 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "095f93d2-7220-4745-a55f-e1aa8019d478")
-	)
-	(junction
-		(at 335.28 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1221d4e4-8b39-4844-937d-b4aa864b0e26")
-	)
-	(junction
-		(at 344.17 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2906a75-3b96-45c9-a91a-29df4bd2f26d")
-	)
-	(label "VCLAMP"
-		(at 340.6 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9cd14b18-061d-4677-9e0d-c36133195cde")
-	)
-	(text "Q8/R28/D10 clamp: VCLAMP = min(VRECT - 1.5 V, ~29 V).\nKeeps U1 (36 V max) below its limit at light-load / high-line\npeaks (to ~41 V) and coil-switching spikes (D7 clamps ~65 V)."
-		(exclude_from_sim no)
-		(at 345 80 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "db484c95-dba3-4681-8297-4bbda6511460")
-	)
-	(text "J9: 5 V to Dial (USB-C pigtail)"
-		(exclude_from_sim no)
-		(at 352 30 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3134361e-d8f6-48cc-a8d2-f7958cf3068a")
 	)
 	(sheet_instances
 		(path "/"
